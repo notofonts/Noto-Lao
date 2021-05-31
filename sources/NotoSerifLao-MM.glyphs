@@ -135,12 +135,12 @@ value = GOOG;
 {
 name = unicodeRanges;
 value = (
-"0",
-"1",
-"25",
-"31",
-"33",
-"45"
+0,
+1,
+25,
+31,
+33,
+45
 );
 },
 {
@@ -177,6 +177,14 @@ value = (
 {
 name = "Don't use Production Names";
 value = 1;
+},
+{
+name = "Use Line Breaks";
+value = 1;
+},
+{
+name = "Disable Last Change";
+value = 1;
 }
 );
 date = "2017-05-12 14:24:50 +0000";
@@ -188,18 +196,91 @@ familyName = "Noto Serif Lao";
 featurePrefixes = (
 {
 automatic = 1;
-code = "languagesystem DFLT dflt;\012languagesystem lao dflt;\012";
+code = "languagesystem DFLT dflt;
+languagesystem lao dflt;
+";
 name = Languagesystems;
 }
 );
 features = (
 {
 automatic = 1;
-code = "feature ccmp;\012";
+code = "feature ccmp;
+";
 name = aalt;
 },
 {
-code = "lookup lao_decomb {\012	script lao;\012	sub amVowel-lao by niggahita-lao aaVowel-lao;\012} lao_decomb;\012\012lookup lao_comb2 {\012	script lao;\012	sub niggahita-lao aaVowel-lao by amVowel-lao;\012} lao_comb2;\012\012lookup lao_comb3 {\012    script lao;\012	sub maiEk-lao niggahita-lao by niggahita_maiEk-lao;\012	sub maiTho-lao niggahita-lao by niggahita_maiTho-lao;\012	sub maiTi-lao niggahita-lao by niggahita_maiTi-lao;\012	sub maiCatawa-lao niggahita-lao by niggahita_maiCatawa-lao;\012\012	sub niggahita-lao maiEk-lao by niggahita_maiEk-lao;\012	sub niggahita-lao maiTho-lao by niggahita_maiTho-lao;\012	sub niggahita-lao maiTi-lao by niggahita_maiTi-lao;\012	sub niggahita-lao maiCatawa-lao by niggahita_maiCatawa-lao;\012} lao_comb3;\012\012lookup lao_comb4 {\012	script lao;\012	sub [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012	sub [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012	sub [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow]' [niggahita-lao.narrow] by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012} lao_comb4;\012\012lookup lao_comb5 {\012	script lao;\012	sub [maiKanVowel-lao maiKanVowel-lao.center iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao maiKonVowel-lao maiKonVowel-lao.center niggahita-lao niggahita-lao.narrow niggahita-lao.right maiKanVowel-lao.narrow iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow maiKonVowel-lao.narrow amVowel-lao amVowel-lao.narrow] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012	sub [niggahita-lao niggahita-lao.narrow] [loVowel-lao loVowel-lao.narrow loVowel-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012	sub [loVowel-lao loVowel-lao.narrow] [uVowel-lao uuVowel-lao]' by [uVowel-lao.small uuVowel-lao.small];\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [maiKanVowel-lao iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao maiKonVowel-lao niggahita-lao maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiKanVowel-lao.narrow iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow maiKonVowel-lao.narrow niggahita-lao.narrow maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];\012	sub ngoNgu-lao [uVowel-lao uuVowel-lao]' by [uVowel-lao.small uuVowel-lao.small];\012	sub [uVowel-lao uuVowel-lao loVowel-lao] [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.small uuVowel-lao.small loVowel-lao.small];\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [uVowel-lao uuVowel-lao loVowel-lao] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [uVowel-lao uuVowel-lao loVowel-lao] [uVowel-lao.small uuVowel-lao.small loVowel-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];\012	sub [soSang-lao thoThong-lao] [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.narrow uuVowel-lao.narrow loVowel-lao.narrow];\012	sub [soSang-lao thoThong-lao] niggahita-lao [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.narrow uuVowel-lao.narrow loVowel-lao.narrow];\012} lao_comb5;\012\012lookup lao_comb6 {\012	script lao;\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] amVowel-lao' by amVowel-lao.narrow;\012} lao_comb6;\012\012lookup lao_comb7 {\012	script lao;\012	sub [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao]' aaVowel-lao by [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right];\012	sub [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao]' [loVowel-lao loVowel-lao.narrow loVowel-lao.small] aaVowel-lao by [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right];\012} lao_comb7;\012\012lookup lao_comb8 {\012	script lao;\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right]' aaVowel-lao by [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao];\012} lao_comb8;\012\012lookup lao_comb9 {\012	script lao;\012	sub niggahita-lao' [loVowel-lao loVowel-lao.narrow loVowel-lao.small] by niggahita-lao.right;\012	sub niggahita-lao.right [loVowel-lao loVowel-lao.narrow loVowel-lao.small] [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small]' by [maiEk-lao.smallright maiTho-lao.smallright maiTi-lao.smallright maiCatawa-lao.smallright karan-lao.smallright];\012} lao_comb9;\012\012lookup lao_comb10 {\012	script lao;\012	sub [eVowel-lao aeVowel-lao oVowel-lao ayMaiMuanVowel-lao aiMaiMayVowel-lao] [koKai-lao khoKhai-lao khoKhuay-lao ngoNgu-lao coCok-lao soSang-lao nyoNyung-lao doDek-lao toTa-lao thoThong-lao thoThung-lao noNok-lao boBae-lao phoPhueng-lao phoPhu-lao moMa-lao roRot-lao loLing-lao woWi-lao soSeua-lao hoHaan-lao oO-lao hoHeuan-lao khmuGo-lao khmuNyo-lao] [maiKanVowel-lao maiKonVowel-lao]' by [maiKanVowel-lao.center maiKonVowel-lao.center];\012	sub [maiKanVowel-lao maiKonVowel-lao] [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small niggahita-lao]' by [maiEk-lao.smallright maiTho-lao.smallright maiTi-lao.smallright maiCatawa-lao.smallright karan-lao.smallright niggahita-lao.right];\012} lao_comb10;";
+code = "lookup lao_decomb {
+	script lao;
+	sub amVowel-lao by niggahita-lao aaVowel-lao;
+} lao_decomb;
+
+lookup lao_comb2 {
+	script lao;
+	sub niggahita-lao aaVowel-lao by amVowel-lao;
+} lao_comb2;
+
+lookup lao_comb3 {
+    script lao;
+	sub maiEk-lao niggahita-lao by niggahita_maiEk-lao;
+	sub maiTho-lao niggahita-lao by niggahita_maiTho-lao;
+	sub maiTi-lao niggahita-lao by niggahita_maiTi-lao;
+	sub maiCatawa-lao niggahita-lao by niggahita_maiCatawa-lao;
+
+	sub niggahita-lao maiEk-lao by niggahita_maiEk-lao;
+	sub niggahita-lao maiTho-lao by niggahita_maiTho-lao;
+	sub niggahita-lao maiTi-lao by niggahita_maiTi-lao;
+	sub niggahita-lao maiCatawa-lao by niggahita_maiCatawa-lao;
+} lao_comb3;
+
+lookup lao_comb4 {
+	script lao;
+	sub [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+	sub [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+	sub [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow]' [niggahita-lao.narrow] by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+} lao_comb4;
+
+lookup lao_comb5 {
+	script lao;
+	sub [maiKanVowel-lao maiKanVowel-lao.center iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao maiKonVowel-lao maiKonVowel-lao.center niggahita-lao niggahita-lao.narrow niggahita-lao.right maiKanVowel-lao.narrow iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow maiKonVowel-lao.narrow amVowel-lao amVowel-lao.narrow] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+	sub [niggahita-lao niggahita-lao.narrow] [loVowel-lao loVowel-lao.narrow loVowel-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+	sub [loVowel-lao loVowel-lao.narrow] [uVowel-lao uuVowel-lao]' by [uVowel-lao.small uuVowel-lao.small];
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [maiKanVowel-lao iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao maiKonVowel-lao niggahita-lao maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiKanVowel-lao.narrow iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow maiKonVowel-lao.narrow niggahita-lao.narrow maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];
+	sub ngoNgu-lao [uVowel-lao uuVowel-lao]' by [uVowel-lao.small uuVowel-lao.small];
+	sub [uVowel-lao uuVowel-lao loVowel-lao] [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.small uuVowel-lao.small loVowel-lao.small];
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [uVowel-lao uuVowel-lao loVowel-lao] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [uVowel-lao uuVowel-lao loVowel-lao] [uVowel-lao.small uuVowel-lao.small loVowel-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];
+	sub [soSang-lao thoThong-lao] [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.narrow uuVowel-lao.narrow loVowel-lao.narrow];
+	sub [soSang-lao thoThong-lao] niggahita-lao [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.narrow uuVowel-lao.narrow loVowel-lao.narrow];
+} lao_comb5;
+
+lookup lao_comb6 {
+	script lao;
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] amVowel-lao' by amVowel-lao.narrow;
+} lao_comb6;
+
+lookup lao_comb7 {
+	script lao;
+	sub [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao]' aaVowel-lao by [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right];
+	sub [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao]' [loVowel-lao loVowel-lao.narrow loVowel-lao.small] aaVowel-lao by [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right];
+} lao_comb7;
+
+lookup lao_comb8 {
+	script lao;
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right]' aaVowel-lao by [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao];
+} lao_comb8;
+
+lookup lao_comb9 {
+	script lao;
+	sub niggahita-lao' [loVowel-lao loVowel-lao.narrow loVowel-lao.small] by niggahita-lao.right;
+	sub niggahita-lao.right [loVowel-lao loVowel-lao.narrow loVowel-lao.small] [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small]' by [maiEk-lao.smallright maiTho-lao.smallright maiTi-lao.smallright maiCatawa-lao.smallright karan-lao.smallright];
+} lao_comb9;
+
+lookup lao_comb10 {
+	script lao;
+	sub [eVowel-lao aeVowel-lao oVowel-lao ayMaiMuanVowel-lao aiMaiMayVowel-lao] [koKai-lao khoKhai-lao khoKhuay-lao ngoNgu-lao coCok-lao soSang-lao nyoNyung-lao doDek-lao toTa-lao thoThong-lao thoThung-lao noNok-lao boBae-lao phoPhueng-lao phoPhu-lao moMa-lao roRot-lao loLing-lao woWi-lao soSeua-lao hoHaan-lao oO-lao hoHeuan-lao khmuGo-lao khmuNyo-lao] [maiKanVowel-lao maiKonVowel-lao]' by [maiKanVowel-lao.center maiKonVowel-lao.center];
+	sub [maiKanVowel-lao maiKonVowel-lao] [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small niggahita-lao]' by [maiEk-lao.smallright maiTho-lao.smallright maiTi-lao.smallright maiCatawa-lao.smallright karan-lao.smallright niggahita-lao.right];
+} lao_comb10;";
 name = ccmp;
 }
 );
@@ -258,16 +339,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"2",
-"2",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+2,
+2,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
@@ -342,16 +423,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"5",
-"2",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+5,
+2,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
@@ -422,16 +503,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"10",
-"2",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+10,
+2,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
@@ -505,16 +586,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"2",
-"6",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+2,
+6,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
@@ -591,16 +672,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"5",
-"6",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+5,
+6,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
@@ -674,16 +755,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"10",
-"6",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+10,
+6,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
@@ -707,7 +788,6 @@ xHeight = 536;
 glyphs = (
 {
 glyphname = .notdef;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -858,7 +938,6 @@ note = .notdef;
 },
 {
 glyphname = NULL;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -890,7 +969,6 @@ unicode = 0000;
 },
 {
 glyphname = CR;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "A12FF52C-901E-4F1C-B651-FD65F325A5D0";
@@ -921,7 +999,6 @@ unicode = 000D;
 },
 {
 glyphname = space;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -953,7 +1030,6 @@ unicode = 0020;
 },
 {
 glyphname = "koKai-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -1579,7 +1655,6 @@ unicode = 0E81;
 },
 {
 glyphname = "khoKhai-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -2193,7 +2268,6 @@ unicode = 0E82;
 },
 {
 glyphname = "khoKhuay-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -2729,7 +2803,6 @@ unicode = 0E84;
 },
 {
 glyphname = "ngoNgu-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -3247,7 +3320,6 @@ unicode = 0E87;
 },
 {
 glyphname = "coCok-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -3747,7 +3819,6 @@ unicode = 0E88;
 },
 {
 glyphname = "soSang-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -4367,7 +4438,6 @@ unicode = 0E8A;
 },
 {
 glyphname = "nyoNyung-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -4903,7 +4973,6 @@ unicode = 0E8D;
 },
 {
 glyphname = "doDek-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -5349,7 +5418,6 @@ unicode = 0E94;
 },
 {
 glyphname = "toTa-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -5831,7 +5899,6 @@ unicode = 0E95;
 },
 {
 glyphname = "thoThong-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -6457,7 +6524,6 @@ unicode = 0E96;
 },
 {
 glyphname = "thoThung-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -6988,7 +7054,6 @@ unicode = 0E97;
 },
 {
 glyphname = "noNok-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -7512,7 +7577,6 @@ unicode = 0E99;
 },
 {
 glyphname = "boBae-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -7959,7 +8023,6 @@ unicode = 0E9A;
 },
 {
 glyphname = "poPa-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -8382,7 +8445,6 @@ unicode = 0E9B;
 },
 {
 glyphname = "phoPhueng-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -9206,7 +9268,6 @@ unicode = 0E9C;
 },
 {
 glyphname = "foFon-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -9718,7 +9779,6 @@ unicode = 0E9D;
 },
 {
 glyphname = "phoPhu-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -10261,7 +10321,6 @@ unicode = 0E9E;
 },
 {
 glyphname = "foFai-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -10780,7 +10839,6 @@ unicode = 0E9F;
 },
 {
 glyphname = "moMa-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -11268,7 +11326,6 @@ unicode = 0EA1;
 },
 {
 glyphname = "yoYa-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -11780,7 +11837,6 @@ unicode = 0EA2;
 },
 {
 glyphname = "roRot-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -12352,7 +12408,6 @@ unicode = 0EA3;
 },
 {
 glyphname = "loLing-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -12972,7 +13027,6 @@ unicode = 0EA5;
 },
 {
 glyphname = "woWi-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -13502,7 +13556,6 @@ unicode = 0EA7;
 },
 {
 glyphname = "soSeua-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -14212,7 +14265,6 @@ unicode = 0EAA;
 },
 {
 glyphname = "hoHaan-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -14965,7 +15017,6 @@ unicode = 0EAB;
 },
 {
 glyphname = "oO-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -15537,7 +15588,6 @@ unicode = 0EAD;
 },
 {
 glyphname = "hoHeuan-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -16145,7 +16195,6 @@ unicode = 0EAE;
 },
 {
 glyphname = "khmuGo-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -17053,7 +17102,6 @@ unicode = 0EDE;
 },
 {
 glyphname = "khmuNyo-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -17871,7 +17919,6 @@ unicode = 0EDF;
 },
 {
 glyphname = "aVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -18527,7 +18574,6 @@ unicode = 0EB0;
 },
 {
 glyphname = "aaVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -18883,7 +18929,6 @@ unicode = 0EB2;
 },
 {
 glyphname = "amVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -19479,7 +19524,6 @@ unicode = 0EB3;
 },
 {
 glyphname = "nyoVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -20087,7 +20131,6 @@ unicode = 0EBD;
 },
 {
 glyphname = "eVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -20366,7 +20409,6 @@ unicode = 0EC0;
 },
 {
 glyphname = "aeVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -20879,7 +20921,6 @@ unicode = 0EC1;
 },
 {
 glyphname = "oVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -21308,7 +21349,6 @@ unicode = 0EC2;
 },
 {
 glyphname = "ayMaiMuanVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -21725,7 +21765,6 @@ unicode = 0EC3;
 },
 {
 glyphname = "aiMaiMayVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -22178,7 +22217,6 @@ unicode = 0EC4;
 },
 {
 glyphname = "amVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -22773,7 +22811,6 @@ note = uni0EB3;
 },
 {
 glyphname = "hoNo-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -23689,7 +23726,6 @@ subCategory = Other;
 },
 {
 glyphname = "hoMo-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -24749,7 +24785,6 @@ subCategory = Other;
 },
 {
 glyphname = "zero-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -25021,7 +25056,6 @@ unicode = 0ED0;
 },
 {
 glyphname = "one-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -25419,7 +25453,6 @@ unicode = 0ED1;
 },
 {
 glyphname = "two-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -25799,7 +25832,6 @@ unicode = 0ED2;
 },
 {
 glyphname = "three-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -26353,7 +26385,6 @@ unicode = 0ED3;
 },
 {
 glyphname = "four-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -26823,7 +26854,6 @@ unicode = 0ED4;
 },
 {
 glyphname = "five-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -27497,7 +27527,6 @@ unicode = 0ED5;
 },
 {
 glyphname = "six-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -28099,7 +28128,6 @@ unicode = 0ED6;
 },
 {
 glyphname = "seven-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -28641,7 +28669,6 @@ unicode = 0ED7;
 },
 {
 glyphname = "eight-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -29339,7 +29366,6 @@ unicode = 0ED8;
 },
 {
 glyphname = "nine-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -29785,7 +29811,6 @@ unicode = 0ED9;
 },
 {
 glyphname = "koLa-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -30249,7 +30274,6 @@ unicode = 0EC6;
 },
 {
 glyphname = "ellipsis-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -30575,7 +30599,6 @@ unicode = 0EAF;
 },
 {
 glyphname = kip;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -31032,7 +31055,6 @@ unicode = 20AD;
 },
 {
 glyphname = "maiKanVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -31442,7 +31464,6 @@ unicode = 0EB1;
 },
 {
 glyphname = "iVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -31732,7 +31753,6 @@ unicode = 0EB4;
 },
 {
 glyphname = "iiVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -32118,7 +32138,6 @@ unicode = 0EB5;
 },
 {
 glyphname = "euVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -32510,7 +32529,6 @@ unicode = 0EB6;
 },
 {
 glyphname = "euuVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -32998,7 +33016,6 @@ unicode = 0EB7;
 },
 {
 glyphname = "maiKonVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -33408,7 +33425,6 @@ unicode = 0EBB;
 },
 {
 glyphname = "uVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -33722,7 +33738,6 @@ unicode = 0EB8;
 },
 {
 glyphname = "uuVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -34120,7 +34135,6 @@ unicode = 0EB9;
 },
 {
 glyphname = "loVowel-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -34524,7 +34538,6 @@ unicode = 0EBC;
 },
 {
 glyphname = "maiEk-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -34694,7 +34707,6 @@ unicode = 0EC8;
 },
 {
 glyphname = "maiTho-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -35128,7 +35140,6 @@ unicode = 0EC9;
 },
 {
 glyphname = "maiTi-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -35658,7 +35669,6 @@ unicode = 0ECA;
 },
 {
 glyphname = "maiCatawa-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -35912,7 +35922,6 @@ unicode = 0ECB;
 },
 {
 glyphname = "karan-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -36286,7 +36295,6 @@ unicode = 0ECC;
 },
 {
 glyphname = "niggahita-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -36594,7 +36602,6 @@ unicode = 0ECD;
 },
 {
 glyphname = "niggahita_maiEk-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -36713,7 +36720,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTho-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -36832,7 +36838,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTi-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -36951,7 +36956,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiCatawa-lao";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -37070,7 +37074,6 @@ width = 0;
 },
 {
 glyphname = "maiEk-lao.small";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -37238,7 +37241,6 @@ width = 0;
 },
 {
 glyphname = "maiTho-lao.small";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -37688,7 +37690,6 @@ width = 0;
 },
 {
 glyphname = "maiTi-lao.small";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -38234,7 +38235,6 @@ width = 0;
 },
 {
 glyphname = "maiCatawa-lao.small";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -38486,7 +38486,6 @@ width = 0;
 },
 {
 glyphname = "karan-lao.small";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -38858,7 +38857,6 @@ width = 0;
 },
 {
 glyphname = "maiKanVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -39267,7 +39265,6 @@ note = .notdef.009;
 },
 {
 glyphname = "iVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -39556,7 +39553,6 @@ note = .notdef.005;
 },
 {
 glyphname = "iiVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -39941,7 +39937,6 @@ note = .notdef.006;
 },
 {
 glyphname = "euVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -40332,7 +40327,6 @@ note = .notdef.007;
 },
 {
 glyphname = "euuVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -40819,7 +40813,6 @@ note = .notdef.008;
 },
 {
 glyphname = "maiKonVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -41228,7 +41221,6 @@ note = .notdef.010;
 },
 {
 glyphname = "uVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -41540,7 +41532,6 @@ width = 0;
 },
 {
 glyphname = "uuVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -41936,7 +41927,6 @@ width = 0;
 },
 {
 glyphname = "loVowel-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -42338,7 +42328,6 @@ width = 0;
 },
 {
 glyphname = "maiEk-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -42507,7 +42496,6 @@ note = uni0EC8.blw;
 },
 {
 glyphname = "maiTho-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -42940,7 +42928,6 @@ note = uni0EC9.blw;
 },
 {
 glyphname = "maiTi-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -43469,7 +43456,6 @@ note = uni0ECA.blw;
 },
 {
 glyphname = "maiCatawa-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -43722,7 +43708,6 @@ note = uni0ECB.blw;
 },
 {
 glyphname = "karan-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -44095,7 +44080,6 @@ note = uni0ECC.blw;
 },
 {
 glyphname = "niggahita_maiEk-lao.right";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -44443,7 +44427,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTho-lao.right";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -45055,7 +45038,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTi-lao.right";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -45763,7 +45745,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiCatawa-lao.right";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -46195,7 +46176,6 @@ width = 0;
 },
 {
 glyphname = "uVowel-lao.small";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -46508,7 +46488,6 @@ note = .notdef.002;
 },
 {
 glyphname = "uuVowel-lao.small";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -46905,7 +46884,6 @@ note = .notdef.004;
 },
 {
 glyphname = "maiKanVowel-lao.center";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -47314,7 +47292,6 @@ note = uni0EB1;
 },
 {
 glyphname = "maiKonVowel-lao.center";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -47723,7 +47700,6 @@ note = uni0EBB;
 },
 {
 glyphname = "niggahita-lao.narrow";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -48029,7 +48005,6 @@ width = 0;
 },
 {
 glyphname = "niggahita-lao.right";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -48335,7 +48310,6 @@ width = 0;
 },
 {
 glyphname = "loVowel-lao.small";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -48737,7 +48711,6 @@ width = 0;
 },
 {
 glyphname = "maiEk-lao.smallright";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -48905,7 +48878,6 @@ width = 0;
 },
 {
 glyphname = "maiTho-lao.smallright";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -49355,7 +49327,6 @@ width = 0;
 },
 {
 glyphname = "maiTi-lao.smallright";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -49901,7 +49872,6 @@ width = 0;
 },
 {
 glyphname = "maiCatawa-lao.smallright";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -50153,7 +50123,6 @@ width = 0;
 },
 {
 glyphname = "karan-lao.smallright";
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 anchors = (
@@ -50525,7 +50494,6 @@ width = 0;
 },
 {
 glyphname = uni00A0;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0";
@@ -50556,7 +50524,6 @@ unicode = 00A0;
 },
 {
 glyphname = uni200B;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "528596C4-5B9B-4A0D-91B5-66A38EFFCD2C";
@@ -50587,7 +50554,6 @@ unicode = 200B;
 },
 {
 glyphname = uni200C;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "A12FF52C-901E-4F1C-B651-FD65F325A5D0";
@@ -50684,7 +50650,6 @@ unicode = 200C;
 },
 {
 glyphname = uni200D;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "A12FF52C-901E-4F1C-B651-FD65F325A5D0";
@@ -50847,7 +50812,6 @@ unicode = 200D;
 },
 {
 glyphname = dottedCircle;
-lastChange = "2017-06-02 15:50:30 +0000";
 layers = (
 {
 layerId = "169B4CCF-67AF-4042-AA6F-C8E438F95C30";
@@ -52546,7 +52510,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -52615,7 +52579,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -52656,8 +52620,8 @@ value = "Noto Serif Lao ExtLt";
 );
 interpolationWeight = 42;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.212121;
-"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.787879;
+"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.78788;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.21212;
 };
 name = ExtraLight;
 weightClass = "Extra Light";
@@ -52685,7 +52649,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -52726,8 +52690,8 @@ value = "Noto Serif Lao Light";
 );
 interpolationWeight = 64;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.545455;
-"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.454545;
+"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.45455;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.54545;
 };
 name = Light;
 weightClass = Light;
@@ -52755,7 +52719,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -52819,7 +52783,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -52860,8 +52824,8 @@ value = "Noto Serif Lao Med";
 );
 interpolationWeight = 110;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.84;
 "528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.16;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.84;
 };
 name = Medium;
 weightClass = Medium;
@@ -52889,7 +52853,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -52930,8 +52894,8 @@ value = "Noto Serif Lao SemBd";
 );
 interpolationWeight = 130;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.64;
 "528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.36;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.64;
 };
 name = SemiBold;
 weightClass = SemiBold;
@@ -52959,7 +52923,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -52996,8 +52960,8 @@ value = 0;
 );
 interpolationWeight = 152;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.42;
 "528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.58;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.42;
 };
 isBold = 1;
 linkStyle = Regular;
@@ -53027,7 +52991,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53068,8 +53032,8 @@ value = "Noto Serif Lao ExtBd";
 );
 interpolationWeight = 175;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.19;
 "528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.81;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.19;
 };
 name = ExtraBold;
 weightClass = ExtraBold;
@@ -53097,7 +53061,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53166,7 +53130,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53208,8 +53172,8 @@ value = "Noto Serif Lao SemCond Thin";
 interpolationWeight = 28;
 interpolationWidth = 89;
 instanceInterpolations = {
-"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.633333;
-"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.366667;
+"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.36667;
+"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.63333;
 };
 name = "SemiCondensed Thin";
 weightClass = Thin;
@@ -53238,7 +53202,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53280,10 +53244,10 @@ value = "Noto Serif Lao SemCond ExtLt";
 interpolationWeight = 42;
 interpolationWidth = 89;
 instanceInterpolations = {
-"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.260606;
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.106061;
-"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.527273;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.106061;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.07778;
+"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.28889;
+"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.49899;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.13434;
 };
 name = "SemiCondensed ExtraLight";
 weightClass = "Extra Light";
@@ -53312,7 +53276,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53354,10 +53318,10 @@ value = "Noto Serif Lao SemCond Light";
 interpolationWeight = 64;
 interpolationWidth = 89;
 instanceInterpolations = {
-"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.183333;
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.362121;
-"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.271212;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.183333;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.2;
+"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.16667;
+"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.28788;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.34545;
 };
 name = "SemiCondensed Light";
 weightClass = Light;
@@ -53386,7 +53350,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53428,8 +53392,8 @@ value = "Noto Serif Lao SemCond";
 interpolationWeight = 94;
 interpolationWidth = 89;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.633333;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.366667;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.36667;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.63333;
 };
 name = SemiCondensed;
 widthClass = SemiCondensed;
@@ -53457,7 +53421,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53499,10 +53463,10 @@ value = "Noto Serif Lao SemCond Med";
 interpolationWeight = 110;
 interpolationWidth = 89;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.553333;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.08;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.286667;
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.08;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.308;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.10133;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.05867;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.532;
 };
 name = "SemiCondensed Medium";
 weightClass = Medium;
@@ -53531,7 +53495,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53573,10 +53537,10 @@ value = "Noto Serif Lao SemCond SemBd";
 interpolationWeight = 130;
 interpolationWidth = 89;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.453333;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.18;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.186667;
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.18;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.23467;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.228;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.132;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.40533;
 };
 name = "SemiCondensed SemiBold";
 weightClass = SemiBold;
@@ -53605,7 +53569,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53647,10 +53611,10 @@ value = "Noto Serif Lao SemCond";
 interpolationWeight = 152;
 interpolationWidth = 89;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.236667;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.183333;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.183333;
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.396667;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.154;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.36733;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.21267;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.266;
 };
 isBold = 1;
 linkStyle = SemiCondensed;
@@ -53681,7 +53645,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53723,10 +53687,10 @@ value = "Noto Serif Lao SemCond ExtBd";
 interpolationWeight = 175;
 interpolationWidth = 89;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.095;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.271667;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.095;
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.538333;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.06967;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.513;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.297;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.12033;
 };
 name = "SemiCondensed ExtraBold";
 weightClass = ExtraBold;
@@ -53755,7 +53719,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53797,8 +53761,8 @@ value = "Noto Serif Lao SemCond Blk";
 interpolationWeight = 194;
 interpolationWidth = 89;
 instanceInterpolations = {
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.633333;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.366667;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.63333;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.36667;
 };
 name = "SemiCondensed Black";
 weightClass = Black;
@@ -53827,7 +53791,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53869,8 +53833,8 @@ value = "Noto Serif Lao Cond Thin";
 interpolationWeight = 28;
 interpolationWidth = 79;
 instanceInterpolations = {
-"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.3;
 "15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.7;
+"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.3;
 };
 name = "Condensed Thin";
 weightClass = Thin;
@@ -53899,7 +53863,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -53941,10 +53905,10 @@ value = "Noto Serif Lao Cond ExtLt";
 interpolationWeight = 42;
 interpolationWidth = 79;
 instanceInterpolations = {
-"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.593939;
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.106061;
-"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.193939;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.106061;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.14848;
+"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.55152;
+"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.23636;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.06364;
 };
 name = "Condensed ExtraLight";
 weightClass = "Extra Light";
@@ -53973,7 +53937,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54015,10 +53979,10 @@ value = "Noto Serif Lao Cond Light";
 interpolationWeight = 64;
 interpolationWidth = 79;
 instanceInterpolations = {
-"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.304545;
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.15;
-"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.15;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.395455;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.38182;
+"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.31818;
+"169B4CCF-67AF-4042-AA6F-C8E438F95C30" = 0.13636;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.16364;
 };
 name = "Condensed Light";
 weightClass = Light;
@@ -54047,7 +54011,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54089,8 +54053,8 @@ value = "Noto Serif Lao Cond";
 interpolationWeight = 94;
 interpolationWidth = 79;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.3;
 "004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.7;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.3;
 };
 name = Condensed;
 widthClass = Condensed;
@@ -54118,7 +54082,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54160,10 +54124,10 @@ value = "Noto Serif Lao Cond Med";
 interpolationWeight = 110;
 interpolationWidth = 79;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.22;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.08;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.62;
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.08;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.588;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.048;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.112;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.252;
 };
 name = "Condensed Medium";
 weightClass = Medium;
@@ -54192,7 +54156,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54234,10 +54198,10 @@ value = "Noto Serif Lao Cond SemBd";
 interpolationWeight = 130;
 interpolationWidth = 79;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.15;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.21;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.49;
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.15;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.448;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.108;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.252;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.192;
 };
 name = "Condensed SemiBold";
 weightClass = SemiBold;
@@ -54266,7 +54230,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54308,10 +54272,10 @@ value = "Noto Serif Lao Cond";
 interpolationWeight = 152;
 interpolationWidth = 79;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.15;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.43;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.27;
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.15;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.294;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.174;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.406;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.126;
 };
 isBold = 1;
 linkStyle = Condensed;
@@ -54342,7 +54306,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54384,10 +54348,10 @@ value = "Noto Serif Lao Cond ExtBd";
 interpolationWeight = 175;
 interpolationWidth = 79;
 instanceInterpolations = {
-"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.095;
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.605;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.095;
-"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.205;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.133;
+"528596C4-5B9B-4A0D-91B5-66A38EFFCD2C" = 0.243;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.567;
+"A12FF52C-901E-4F1C-B651-FD65F325A5D0" = 0.057;
 };
 name = "Condensed ExtraBold";
 weightClass = ExtraBold;
@@ -54416,7 +54380,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54488,7 +54452,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54559,7 +54523,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54601,8 +54565,8 @@ value = "Noto Serif Lao ExtCond ExtLt";
 interpolationWeight = 42;
 interpolationWidth = 70;
 instanceInterpolations = {
-"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.787879;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.212121;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.21212;
+"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.78788;
 };
 name = "ExtraCondensed ExtraLight";
 weightClass = "Extra Light";
@@ -54631,7 +54595,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54673,8 +54637,8 @@ value = "Noto Serif Lao ExtCond Light";
 interpolationWeight = 64;
 interpolationWidth = 70;
 instanceInterpolations = {
-"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.454545;
-"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.545455;
+"004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.54545;
+"15894915-CD0E-4C5A-A33F-EBC469CF719E" = 0.45455;
 };
 name = "ExtraCondensed Light";
 weightClass = Light;
@@ -54703,7 +54667,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54773,7 +54737,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54815,8 +54779,8 @@ value = "Noto Serif Lao ExtCond Med";
 interpolationWeight = 110;
 interpolationWidth = 70;
 instanceInterpolations = {
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.16;
 "004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.84;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.16;
 };
 name = "ExtraCondensed Medium";
 weightClass = Medium;
@@ -54845,7 +54809,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54887,8 +54851,8 @@ value = "Noto Serif Lao ExtCond SemBd";
 interpolationWeight = 130;
 interpolationWidth = 70;
 instanceInterpolations = {
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.36;
 "004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.64;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.36;
 };
 name = "ExtraCondensed SemiBold";
 weightClass = SemiBold;
@@ -54917,7 +54881,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -54959,8 +54923,8 @@ value = "Noto Serif Lao ExtCond";
 interpolationWeight = 152;
 interpolationWidth = 70;
 instanceInterpolations = {
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.58;
 "004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.42;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.58;
 };
 isBold = 1;
 linkStyle = ExtraCondensed;
@@ -54991,7 +54955,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
@@ -55033,8 +54997,8 @@ value = "Noto Serif Lao ExtCond ExtBd";
 interpolationWeight = 175;
 interpolationWidth = 70;
 instanceInterpolations = {
-"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.81;
 "004437BA-C458-42A1-B8EC-F9F2993A06FB" = 0.19;
+"5B84B61E-AB9F-4F38-98DA-7F1AA4E54ED0" = 0.81;
 };
 name = "ExtraCondensed ExtraBold";
 weightClass = ExtraBold;
@@ -55063,7 +55027,7 @@ value = (
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 },
 {
 name = typoAscender;
