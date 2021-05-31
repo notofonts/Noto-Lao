@@ -193,6 +193,14 @@ Name = "Vertical height";
 Tag = VLHT;
 }
 );
+},
+{
+name = "Use Line Breaks";
+value = 1;
+},
+{
+name = "Disable Last Change";
+value = 1;
 }
 );
 date = "2017-05-12 13:43:28 +0000";
@@ -203,17 +211,114 @@ disablesNiceNames = 1;
 familyName = "Noto Sans Lao";
 featurePrefixes = (
 {
-code = "languagesystem DFLT dflt;\012languagesystem lao dflt;\012";
+code = "languagesystem DFLT dflt;
+languagesystem lao dflt;
+";
 name = Languagesystems;
 }
 );
 features = (
 {
-code = "feature ccmp;\012";
+code = "feature ccmp;
+";
 name = aalt;
 },
 {
-code = "lookup lao_decomb {\012	script lao;\012	sub amVowel-lao by niggahita-lao aaVowel-lao;\012} lao_decomb;\012\012lookup lao_comb2 {\012	script lao;\012	sub niggahita-lao aaVowel-lao by amVowel-lao;\012} lao_comb2;\012\012 lookup lao_comb3 {\012    script lao;\012	sub maiEk-lao niggahita-lao by niggahita_maiEk-lao;\012	sub maiTho-lao niggahita-lao by niggahita_maiTho-lao;\012	sub maiTi-lao niggahita-lao by niggahita_maiTi-lao;\012	sub maiCatawa-lao niggahita-lao by niggahita_maiCatawa-lao;\012\012	sub niggahita-lao maiEk-lao by niggahita_maiEk-lao;\012	sub niggahita-lao maiTho-lao by niggahita_maiTho-lao;\012	sub niggahita-lao maiTi-lao by niggahita_maiTi-lao;\012	sub niggahita-lao maiCatawa-lao by niggahita_maiCatawa-lao;\012	\012	sub maiEk-lao niggahita-lao.narrow by niggahita_maiEk-lao.narrow;\012	sub maiTho-lao niggahita-lao.narrow by niggahita_maiTho-lao.narrow;\012	sub maiTi-lao niggahita-lao.narrow by niggahita_maiTi-lao.narrow;\012	sub maiCatawa-lao niggahita-lao.narrow by niggahita_maiCatawa-lao.narrow;\012\012	sub niggahita-lao.narrow maiEk-lao by niggahita_maiEk-lao.narrow;\012	sub niggahita-lao.narrow maiTho-lao by niggahita_maiTho-lao.narrow;\012	sub niggahita-lao.narrow maiTi-lao by niggahita_maiTi-lao.narrow;\012	sub niggahita-lao.narrow maiCatawa-lao by niggahita_maiCatawa-lao.narrow;\012} lao_comb3;\012\012lookup lao_comb4 {\012	script lao;\012	sub [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];	\012	sub [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012	sub [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow]' [niggahita-lao.narrow] by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012} lao_comb4;\012\012lookup lao_comb5 {\012	script lao;\012	sub [maiKanVowel-lao maiKanVowel-lao.center iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao maiKonVowel-lao maiKonVowel-lao.center niggahita-lao niggahita-lao.narrow niggahita-lao.right maiKanVowel-lao.narrow iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow maiKonVowel-lao.narrow amVowel-lao amVowel-lao.narrow] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012	sub [maiKanVowel-lao maiKanVowel-lao.center maiKonVowel-lao maiKonVowel-lao.center niggahita-lao niggahita-lao.narrow niggahita-lao.right maiKanVowel-lao.narrow maiKonVowel-lao.narrow amVowel-lao amVowel-lao.narrow] niggahita-lao' by niggahita-lao.right;\012	sub [iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow] niggahita-lao' by niggahita-lao.narrow;\012	sub [niggahita-lao niggahita-lao.narrow niggahita-lao.right] [loVowel-lao loVowel-lao.narrow loVowel-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];\012	sub [loVowel-lao loVowel-lao.narrow] [uVowel-lao uuVowel-lao]' by [uVowel-lao.small uuVowel-lao.small];\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [maiKanVowel-lao iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao maiKonVowel-lao maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiKanVowel-lao.narrow iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow maiKonVowel-lao.narrow maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];\012	sub ngoNgu-lao [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.small uuVowel-lao.small loVowel-lao.small];\012	sub [uVowel-lao uuVowel-lao loVowel-lao] [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.small uuVowel-lao.small loVowel-lao.small];\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [uVowel-lao uuVowel-lao loVowel-lao] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [uVowel-lao uuVowel-lao loVowel-lao] [uVowel-lao.small uuVowel-lao.small loVowel-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];\012	sub [soSang-lao thoThong-lao] [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.narrow uuVowel-lao.narrow loVowel-lao.narrow];\012	sub [soSang-lao thoThong-lao] niggahita-lao [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.narrow uuVowel-lao.narrow loVowel-lao.narrow];\012} lao_comb5;\012\012lookup lao_comb6 {\012	script lao;\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] amVowel-lao' by amVowel-lao.narrow;\012} lao_comb6;\012\012lookup lao_comb7 {\012	script lao;\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao]' aaVowel-lao by [niggahita_maiEk-lao.narrow niggahita_maiTho-lao.narrow niggahita_maiTi-lao.narrow niggahita_maiCatawa-lao.narrow];\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] niggahita-lao' [loVowel-lao loVowel-lao.narrow loVowel-lao.small] by niggahita-lao.narrow;\012	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right]' aaVowel-lao by [niggahita_maiEk-lao.narrow niggahita_maiTho-lao.narrow niggahita_maiTi-lao.narrow niggahita_maiCatawa-lao.narrow];\012} lao_comb7;\012\012lookup lao_comb8 {\012	script lao;\012	sub niggahita-lao' [loVowel-lao loVowel-lao.narrow loVowel-lao.small] by niggahita-lao.right;\012} lao_comb8;\012\012lookup lao_comb9 {\012	script lao;\012	sub [eVowel-lao aeVowel-lao oVowel-lao ayMaiMuanVowel-lao aiMaiMayVowel-lao] [koKai-lao khoKhai-lao khoKhuay-lao ngoNgu-lao coCok-lao soSang-lao nyoNyung-lao doDek-lao toTa-lao thoThong-lao thoThung-lao noNok-lao boBae-lao phoPhueng-lao phoPhu-lao moMa-lao roRot-lao loLing-lao woWi-lao soSeua-lao hoHaan-lao oO-lao hoHeuan-lao khmuGo-lao khmuNyo-lao hoNo-lao hoMo-lao] [maiKanVowel-lao maiKonVowel-lao]' by [maiKanVowel-lao.center maiKonVowel-lao.center];\012} lao_comb9;\012\012lookup lao_comb10 {\012	script lao;\012	sub [koKai-lao khoKhai-lao khoKhuay-lao ngoNgu-lao coCok-lao soSang-lao nyoNyung-lao doDek-lao toTa-lao thoThong-lao thoThung-lao noNok-lao boBae-lao phoPhueng-lao phoPhu-lao moMa-lao roRot-lao loLing-lao woWi-lao soSeua-lao hoHaan-lao oO-lao hoHeuan-lao khmuGo-lao khmuNyo-lao hoNo-lao hoMo-lao] [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao]' aaVowel-lao by [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right];\012} lao_comb10;\012\012lookup lao_comb11 {\012	script lao;\012	sub [maiKanVowel-lao maiKonVowel-lao maiKanVowel-lao.center maiKonVowel-lao.center iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow] niggahita-lao' by niggahita-lao.right;\012} lao_comb11;\012\012lookup lao_comb12 {\012	script lao;\012	sub [loVowel-lao loVowel-lao.narrow loVowel-lao.small] loVowel-lao' by loVowel-lao.small;\012} lao_comb12;\012\012\012	";
+code = "lookup lao_decomb {
+	script lao;
+	sub amVowel-lao by niggahita-lao aaVowel-lao;
+} lao_decomb;
+
+lookup lao_comb2 {
+	script lao;
+	sub niggahita-lao aaVowel-lao by amVowel-lao;
+} lao_comb2;
+
+ lookup lao_comb3 {
+    script lao;
+	sub maiEk-lao niggahita-lao by niggahita_maiEk-lao;
+	sub maiTho-lao niggahita-lao by niggahita_maiTho-lao;
+	sub maiTi-lao niggahita-lao by niggahita_maiTi-lao;
+	sub maiCatawa-lao niggahita-lao by niggahita_maiCatawa-lao;
+
+	sub niggahita-lao maiEk-lao by niggahita_maiEk-lao;
+	sub niggahita-lao maiTho-lao by niggahita_maiTho-lao;
+	sub niggahita-lao maiTi-lao by niggahita_maiTi-lao;
+	sub niggahita-lao maiCatawa-lao by niggahita_maiCatawa-lao;
+	
+	sub maiEk-lao niggahita-lao.narrow by niggahita_maiEk-lao.narrow;
+	sub maiTho-lao niggahita-lao.narrow by niggahita_maiTho-lao.narrow;
+	sub maiTi-lao niggahita-lao.narrow by niggahita_maiTi-lao.narrow;
+	sub maiCatawa-lao niggahita-lao.narrow by niggahita_maiCatawa-lao.narrow;
+
+	sub niggahita-lao.narrow maiEk-lao by niggahita_maiEk-lao.narrow;
+	sub niggahita-lao.narrow maiTho-lao by niggahita_maiTho-lao.narrow;
+	sub niggahita-lao.narrow maiTi-lao by niggahita_maiTi-lao.narrow;
+	sub niggahita-lao.narrow maiCatawa-lao by niggahita_maiCatawa-lao.narrow;
+} lao_comb3;
+
+lookup lao_comb4 {
+	script lao;
+	sub [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];	
+	sub [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+	sub [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow]' [niggahita-lao.narrow] by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+} lao_comb4;
+
+lookup lao_comb5 {
+	script lao;
+	sub [maiKanVowel-lao maiKanVowel-lao.center iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao maiKonVowel-lao maiKonVowel-lao.center niggahita-lao niggahita-lao.narrow niggahita-lao.right maiKanVowel-lao.narrow iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow maiKonVowel-lao.narrow amVowel-lao amVowel-lao.narrow] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+	sub [maiKanVowel-lao maiKanVowel-lao.center maiKonVowel-lao maiKonVowel-lao.center niggahita-lao niggahita-lao.narrow niggahita-lao.right maiKanVowel-lao.narrow maiKonVowel-lao.narrow amVowel-lao amVowel-lao.narrow] niggahita-lao' by niggahita-lao.right;
+	sub [iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow] niggahita-lao' by niggahita-lao.narrow;
+	sub [niggahita-lao niggahita-lao.narrow niggahita-lao.right] [loVowel-lao loVowel-lao.narrow loVowel-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.small maiTho-lao.small maiTi-lao.small maiCatawa-lao.small karan-lao.small];
+	sub [loVowel-lao loVowel-lao.narrow] [uVowel-lao uuVowel-lao]' by [uVowel-lao.small uuVowel-lao.small];
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [maiKanVowel-lao iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao maiKonVowel-lao maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiKanVowel-lao.narrow iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow maiKonVowel-lao.narrow maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];
+	sub ngoNgu-lao [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.small uuVowel-lao.small loVowel-lao.small];
+	sub [uVowel-lao uuVowel-lao loVowel-lao] [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.small uuVowel-lao.small loVowel-lao.small];
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [uVowel-lao uuVowel-lao loVowel-lao] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [uVowel-lao uuVowel-lao loVowel-lao] [uVowel-lao.small uuVowel-lao.small loVowel-lao.small] [maiEk-lao maiTho-lao maiTi-lao maiCatawa-lao karan-lao]' by [maiEk-lao.narrow maiTho-lao.narrow maiTi-lao.narrow maiCatawa-lao.narrow karan-lao.narrow];
+	sub [soSang-lao thoThong-lao] [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.narrow uuVowel-lao.narrow loVowel-lao.narrow];
+	sub [soSang-lao thoThong-lao] niggahita-lao [uVowel-lao uuVowel-lao loVowel-lao]' by [uVowel-lao.narrow uuVowel-lao.narrow loVowel-lao.narrow];
+} lao_comb5;
+
+lookup lao_comb6 {
+	script lao;
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] amVowel-lao' by amVowel-lao.narrow;
+} lao_comb6;
+
+lookup lao_comb7 {
+	script lao;
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao]' aaVowel-lao by [niggahita_maiEk-lao.narrow niggahita_maiTho-lao.narrow niggahita_maiTi-lao.narrow niggahita_maiCatawa-lao.narrow];
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] niggahita-lao' [loVowel-lao loVowel-lao.narrow loVowel-lao.small] by niggahita-lao.narrow;
+	sub [poPa-lao foFon-lao foFai-lao yoYa-lao] [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right]' aaVowel-lao by [niggahita_maiEk-lao.narrow niggahita_maiTho-lao.narrow niggahita_maiTi-lao.narrow niggahita_maiCatawa-lao.narrow];
+} lao_comb7;
+
+lookup lao_comb8 {
+	script lao;
+	sub niggahita-lao' [loVowel-lao loVowel-lao.narrow loVowel-lao.small] by niggahita-lao.right;
+} lao_comb8;
+
+lookup lao_comb9 {
+	script lao;
+	sub [eVowel-lao aeVowel-lao oVowel-lao ayMaiMuanVowel-lao aiMaiMayVowel-lao] [koKai-lao khoKhai-lao khoKhuay-lao ngoNgu-lao coCok-lao soSang-lao nyoNyung-lao doDek-lao toTa-lao thoThong-lao thoThung-lao noNok-lao boBae-lao phoPhueng-lao phoPhu-lao moMa-lao roRot-lao loLing-lao woWi-lao soSeua-lao hoHaan-lao oO-lao hoHeuan-lao khmuGo-lao khmuNyo-lao hoNo-lao hoMo-lao] [maiKanVowel-lao maiKonVowel-lao]' by [maiKanVowel-lao.center maiKonVowel-lao.center];
+} lao_comb9;
+
+lookup lao_comb10 {
+	script lao;
+	sub [koKai-lao khoKhai-lao khoKhuay-lao ngoNgu-lao coCok-lao soSang-lao nyoNyung-lao doDek-lao toTa-lao thoThong-lao thoThung-lao noNok-lao boBae-lao phoPhueng-lao phoPhu-lao moMa-lao roRot-lao loLing-lao woWi-lao soSeua-lao hoHaan-lao oO-lao hoHeuan-lao khmuGo-lao khmuNyo-lao hoNo-lao hoMo-lao] [niggahita_maiEk-lao niggahita_maiTho-lao niggahita_maiTi-lao niggahita_maiCatawa-lao]' aaVowel-lao by [niggahita_maiEk-lao.right niggahita_maiTho-lao.right niggahita_maiTi-lao.right niggahita_maiCatawa-lao.right];
+} lao_comb10;
+
+lookup lao_comb11 {
+	script lao;
+	sub [maiKanVowel-lao maiKonVowel-lao maiKanVowel-lao.center maiKonVowel-lao.center iVowel-lao iiVowel-lao euVowel-lao euuVowel-lao iVowel-lao.narrow iiVowel-lao.narrow euVowel-lao.narrow euuVowel-lao.narrow] niggahita-lao' by niggahita-lao.right;
+} lao_comb11;
+
+lookup lao_comb12 {
+	script lao;
+	sub [loVowel-lao loVowel-lao.narrow loVowel-lao.small] loVowel-lao' by loVowel-lao.small;
+} lao_comb12;
+
+
+	";
 name = ccmp;
 }
 );
@@ -1211,7 +1316,6 @@ xHeight = 536;
 glyphs = (
 {
 glyphname = .notdef;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -1506,7 +1610,6 @@ note = .notdef;
 },
 {
 glyphname = NULL;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -1562,7 +1665,6 @@ unicode = 0000;
 },
 {
 glyphname = CR;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -1617,7 +1719,6 @@ unicode = 000D;
 },
 {
 glyphname = space;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -1673,7 +1774,6 @@ unicode = 0020;
 },
 {
 glyphname = "koKai-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -2437,7 +2537,6 @@ unicode = 0E81;
 },
 {
 glyphname = "khoKhai-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -3369,7 +3468,6 @@ unicode = 0E82;
 },
 {
 glyphname = "khoKhuay-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -4205,7 +4303,6 @@ unicode = 0E84;
 },
 {
 glyphname = "ngoNgu-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -4849,7 +4946,6 @@ unicode = 0E87;
 },
 {
 glyphname = "coCok-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -5577,7 +5673,6 @@ unicode = 0E88;
 },
 {
 glyphname = "soSang-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -6509,7 +6604,6 @@ unicode = 0E8A;
 },
 {
 glyphname = "nyoNyung-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -7345,7 +7439,6 @@ unicode = 0E8D;
 },
 {
 glyphname = "doDek-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -7989,7 +8082,6 @@ unicode = 0E94;
 },
 {
 glyphname = "toTa-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -8801,7 +8893,6 @@ unicode = 0E95;
 },
 {
 glyphname = "thoThong-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -9565,7 +9656,6 @@ unicode = 0E96;
 },
 {
 glyphname = "thoThung-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -10257,7 +10347,6 @@ unicode = 0E97;
 },
 {
 glyphname = "noNok-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -11021,7 +11110,6 @@ unicode = 0E99;
 },
 {
 glyphname = "boBae-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -11545,7 +11633,6 @@ unicode = 0E9A;
 },
 {
 glyphname = "poPa-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -12069,7 +12156,6 @@ unicode = 0E9B;
 },
 {
 glyphname = "phoPhueng-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -13145,7 +13231,6 @@ unicode = 0E9C;
 },
 {
 glyphname = "foFon-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -14005,7 +14090,6 @@ unicode = 0E9D;
 },
 {
 glyphname = "phoPhu-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -14721,7 +14805,6 @@ unicode = 0E9E;
 },
 {
 glyphname = "foFai-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -15437,7 +15520,6 @@ unicode = 0E9F;
 },
 {
 glyphname = "moMa-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -16153,7 +16235,6 @@ unicode = 0EA1;
 },
 {
 glyphname = "yoYa-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -16994,7 +17075,6 @@ unicode = 0EA2;
 },
 {
 glyphname = "roRot-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -17830,7 +17910,6 @@ unicode = 0EA3;
 },
 {
 glyphname = "loLing-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -18786,7 +18865,6 @@ unicode = 0EA5;
 },
 {
 glyphname = "woWi-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -19478,7 +19556,6 @@ unicode = 0EA7;
 },
 {
 glyphname = "soSeua-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -20602,7 +20679,6 @@ unicode = 0EAA;
 },
 {
 glyphname = "hoHaan-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -21390,7 +21466,6 @@ unicode = 0EAB;
 },
 {
 glyphname = "oO-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -22226,7 +22301,6 @@ unicode = 0EAD;
 },
 {
 glyphname = "hoHeuan-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -23158,7 +23232,6 @@ unicode = 0EAE;
 },
 {
 glyphname = "khmuGo-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -24173,7 +24246,6 @@ unicode = 0EDE;
 },
 {
 glyphname = "khmuNyo-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -25260,7 +25332,6 @@ unicode = 0EDF;
 },
 {
 glyphname = "aVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -25844,7 +25915,6 @@ unicode = 0EB0;
 },
 {
 glyphname = "aaVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -26176,7 +26246,6 @@ unicode = 0EB2;
 },
 {
 glyphname = "amVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -26988,7 +27057,6 @@ unicode = 0EB3;
 },
 {
 glyphname = "nyoVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -27944,7 +28012,6 @@ unicode = 0EBD;
 },
 {
 glyphname = "eVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -28276,7 +28343,6 @@ unicode = 0EC0;
 },
 {
 glyphname = "aeVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -28860,7 +28926,6 @@ unicode = 0EC1;
 },
 {
 glyphname = "oVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -29360,7 +29425,6 @@ unicode = 0EC2;
 },
 {
 glyphname = "ayMaiMuanVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -29932,7 +29996,6 @@ unicode = 0EC3;
 },
 {
 glyphname = "aiMaiMayVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -30384,7 +30447,6 @@ unicode = 0EC4;
 },
 {
 glyphname = "amVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -31195,7 +31257,6 @@ note = saraamlaonorm;
 },
 {
 glyphname = "hoNo-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -32248,7 +32309,6 @@ subCategory = Other;
 },
 {
 glyphname = "hoMo-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -33397,7 +33457,6 @@ subCategory = Other;
 },
 {
 glyphname = "zero-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -33885,7 +33944,6 @@ unicode = 0ED0;
 },
 {
 glyphname = "one-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -34481,7 +34539,6 @@ unicode = 0ED1;
 },
 {
 glyphname = "two-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -35065,7 +35122,6 @@ unicode = 0ED2;
 },
 {
 glyphname = "three-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -35925,7 +35981,6 @@ unicode = 0ED3;
 },
 {
 glyphname = "four-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -36689,7 +36744,6 @@ unicode = 0ED4;
 },
 {
 glyphname = "five-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -37909,7 +37963,6 @@ unicode = 0ED5;
 },
 {
 glyphname = "six-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -38997,7 +39050,6 @@ unicode = 0ED6;
 },
 {
 glyphname = "seven-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -39593,7 +39645,6 @@ unicode = 0ED7;
 },
 {
 glyphname = "eight-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -40883,7 +40934,6 @@ unicode = 0ED8;
 },
 {
 glyphname = "nine-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -41527,7 +41577,6 @@ unicode = 0ED9;
 },
 {
 glyphname = "koLa-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -42171,7 +42220,6 @@ unicode = 0EC6;
 },
 {
 glyphname = "ellipsis-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -42563,7 +42611,6 @@ unicode = 0EAF;
 },
 {
 glyphname = kip;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -42967,7 +43014,6 @@ unicode = 20AD;
 },
 {
 glyphname = "maiKanVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -43419,7 +43465,6 @@ unicode = 0EB1;
 },
 {
 glyphname = "iVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -43991,7 +44036,6 @@ unicode = 0EB4;
 },
 {
 glyphname = "iiVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -44647,7 +44691,6 @@ unicode = 0EB5;
 },
 {
 glyphname = "euVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -45423,7 +45466,6 @@ unicode = 0EB6;
 },
 {
 glyphname = "euuVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -46283,7 +46325,6 @@ unicode = 0EB7;
 },
 {
 glyphname = "maiKonVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -46735,7 +46776,6 @@ unicode = 0EBB;
 },
 {
 glyphname = "uVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -47139,7 +47179,6 @@ unicode = 0EB8;
 },
 {
 glyphname = "uuVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -47711,7 +47750,6 @@ unicode = 0EB9;
 },
 {
 glyphname = "loVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -48283,7 +48321,6 @@ unicode = 0EBC;
 },
 {
 glyphname = "maiEk-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -48591,7 +48628,6 @@ unicode = 0EC8;
 },
 {
 glyphname = "maiTho-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -49127,7 +49163,6 @@ unicode = 0EC9;
 },
 {
 glyphname = "maiTi-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -49867,7 +49902,6 @@ unicode = 0ECA;
 },
 {
 glyphname = "maiCatawa-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -50271,7 +50305,6 @@ unicode = 0ECB;
 },
 {
 glyphname = "karan-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -50723,7 +50756,6 @@ unicode = 0ECC;
 },
 {
 glyphname = "niggahita-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -51331,7 +51363,6 @@ unicode = 0ECD;
 },
 {
 glyphname = "niggahita_maiEk-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -51565,7 +51596,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTho-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -51799,7 +51829,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTi-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -52033,7 +52062,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiCatawa-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -52267,7 +52295,6 @@ width = 0;
 },
 {
 glyphname = "maiEk-lao.small";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -52573,7 +52600,6 @@ width = 0;
 },
 {
 glyphname = "maiTho-lao.small";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -53107,7 +53133,6 @@ width = 0;
 },
 {
 glyphname = "maiTi-lao.small";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -53845,7 +53870,6 @@ width = 0;
 },
 {
 glyphname = "maiCatawa-lao.small";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -54247,7 +54271,6 @@ width = 0;
 },
 {
 glyphname = "karan-lao.small";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -54697,7 +54720,6 @@ width = 0;
 },
 {
 glyphname = "maiKanVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -55148,7 +55170,6 @@ note = maihanakadlaonorm;
 },
 {
 glyphname = "iVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -55719,7 +55740,6 @@ note = sarailaonorm;
 },
 {
 glyphname = "iiVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -56374,7 +56394,6 @@ note = saraiilaonorm;
 },
 {
 glyphname = "euVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -57149,7 +57168,6 @@ note = sarauelaonorm;
 },
 {
 glyphname = "euuVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -58008,7 +58026,6 @@ note = saraueelaonorm;
 },
 {
 glyphname = "maiKonVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -58459,7 +58476,6 @@ note = karanlaoor;
 },
 {
 glyphname = "maiEk-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -58766,7 +58782,6 @@ note = maiakelaolow;
 },
 {
 glyphname = "maiTho-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -59301,7 +59316,6 @@ note = maitolaolow;
 },
 {
 glyphname = "maiTi-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -60040,7 +60054,6 @@ note = maithrilaolow;
 },
 {
 glyphname = "maiCatawa-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -60443,7 +60456,6 @@ note = maichattawalaolow;
 },
 {
 glyphname = "karan-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -60894,7 +60906,6 @@ note = karanlaolow;
 },
 {
 glyphname = "niggahita-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -61500,7 +61511,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiEk-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -61698,7 +61708,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTho-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -61896,7 +61905,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTi-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -62094,7 +62102,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiCatawa-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -62292,7 +62299,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiEk-lao.right";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -62490,7 +62496,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTho-lao.right";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -62688,7 +62693,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiTi-lao.right";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -62886,7 +62890,6 @@ width = 0;
 },
 {
 glyphname = "niggahita_maiCatawa-lao.right";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -63084,7 +63087,6 @@ width = 0;
 },
 {
 glyphname = "uVowel-lao.small";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -63487,7 +63489,6 @@ note = saraulao4j;
 },
 {
 glyphname = "uuVowel-lao.small";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -64058,7 +64059,6 @@ note = sarauulao4j;
 },
 {
 glyphname = "loVowel-lao.small";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -64628,7 +64628,6 @@ width = 0;
 },
 {
 glyphname = "maiKanVowel-lao.center";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -65078,7 +65077,6 @@ width = 0;
 },
 {
 glyphname = "maiKonVowel-lao.center";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -65528,7 +65526,6 @@ width = 0;
 },
 {
 glyphname = "uVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -65930,7 +65927,6 @@ width = 0;
 },
 {
 glyphname = "uuVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -66500,7 +66496,6 @@ width = 0;
 },
 {
 glyphname = "loVowel-lao.narrow";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -67070,7 +67065,6 @@ width = 0;
 },
 {
 glyphname = "niggahita-lao.right";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -67676,7 +67670,6 @@ width = 0;
 },
 {
 glyphname = uni00A0;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -67731,7 +67724,6 @@ unicode = 00A0;
 },
 {
 glyphname = uni200B;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "E5D3352E-10FF-4C03-AD9F-F95B1FD01257";
@@ -67786,7 +67778,6 @@ unicode = 200B;
 },
 {
 glyphname = uni200C;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "6449CA81-A7C3-4005-93E5-765657812F1B";
@@ -67973,7 +67964,6 @@ unicode = 200C;
 },
 {
 glyphname = uni200D;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "6449CA81-A7C3-4005-93E5-765657812F1B";
@@ -68292,7 +68282,6 @@ unicode = 200D;
 },
 {
 glyphname = dottedCircle;
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 layerId = "64BC062E-13E4-450B-B24E-D8A474022433";
@@ -71635,7 +71624,6 @@ unicode = 25CC;
 },
 {
 glyphname = "loVowel_uVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
@@ -72409,7 +72397,6 @@ width = 0;
 },
 {
 glyphname = "loVowel_uuVowel-lao";
-lastChange = "2021-05-31 20:12:26 +0000";
 layers = (
 {
 anchors = (
