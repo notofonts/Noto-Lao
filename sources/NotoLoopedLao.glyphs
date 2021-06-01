@@ -182281,16 +182281,6 @@ instanceInterpolations = {
 name = "UI ExtraCondensed Black";
 weightClass = Black;
 widthClass = "Extra Condensed";
-},
-{
-interpolationCustom = 500;
-instanceInterpolations = {
-"00D2966A-C550-4FE4-A2C6-1BEE12A6E541" = 0.03671;
-"6E668239-F79A-4803-9842-9160852853A7" = 0.5696;
-"EC79AED6-C145-434E-AE62-F6F3D2AFA8D1" = 0.06329;
-"F6F64548-F6C3-40CA-9536-268C35719622" = 0.3304;
-};
-name = SemiUI;
 }
 );
 keepAlternatesTogether = 1;
