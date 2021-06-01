@@ -624,6 +624,38 @@ name = calt;
 },
 {
 code = "# Automatic Code End
+
+lookup LaoContexualKerning {
+lookupflag UseMarkFilteringSet @laoAboveMarks; # This needs to be here to make sure any below marks do not have effect
+#
+# 1 -- top marks followed by Ascending vowels
+#
+# 1a) maiTi-lao
+# pos maiTi-lao' oVowel-lao <-50 0 0 0>; # ??? Not working ???
+pos maiTi-lao oVowel-lao' <110 0 110 0>;
+pos @_laoKernTop02 oVowel-lao' <30 0 30 0>; # 1/2
+pos @_laoKernTop02 @laoToneMarksSmall oVowel-lao' <30 0 30 0>; # 2/2
+pos maiTi-lao ayMaiMuanVowel-lao' <40 0 40 0>;
+pos maiTi-lao aiMaiMayVowel-lao' <20 0 20 0>;
+# Attention: top-right curved consonantes are kerned to oVowel, hence we need bigger values here.
+#
+# 2 -- Ascending vowels + ascending consonants + wide top marks (replaced by .narrow by here)
+# foFon-lao not needed, enough space. foFai-lao anyway neither.
+#
+# 2a) -\"- + poPa / yoYa + maiTi-lao.narrow
+pos oVowel-lao poPa-lao' maiTi-lao.narrow <30 0 30 0>;
+pos oVowel-lao yoYa-lao' maiTi-lao.narrow <40 0 40 0>;
+pos ayMaiMuanVowel-lao poPa-lao' maiTi-lao.narrow <70 0 70 0>;
+pos ayMaiMuanVowel-lao yoYa-lao' maiTi-lao.narrow <80 0 80 0>;
+pos aiMaiMayVowel-lao poPa-lao' maiTi-lao.narrow <40 0 40 0>;
+pos aiMaiMayVowel-lao yoYa-lao' maiTi-lao.narrow <50 0 50 0>;
+#
+} LaoContexualKerning;
+";
+name = kern;
+},
+{
+code = "# Automatic Code End
 ";
 name = mark;
 },
@@ -677,38 +709,6 @@ code = "lookup contextualToneMarks { ### some users may prefer right-aligned ton
 	 } contextualToneMarks;
 ";
 name = ss03;
-},
-{
-code = "# Automatic Code End
-
-lookup LaoContexualKerning {
-lookupflag UseMarkFilteringSet @laoAboveMarks; # This needs to be here to make sure any below marks do not have effect
-#
-# 1 -- top marks followed by Ascending vowels
-#
-# 1a) maiTi-lao
-# pos maiTi-lao' oVowel-lao <-50 0 0 0>; # ??? Not working ???
-pos maiTi-lao oVowel-lao' <110 0 110 0>;
-pos @_laoKernTop02 oVowel-lao' <30 0 30 0>; # 1/2
-pos @_laoKernTop02 @laoToneMarksSmall oVowel-lao' <30 0 30 0>; # 2/2
-pos maiTi-lao ayMaiMuanVowel-lao' <40 0 40 0>;
-pos maiTi-lao aiMaiMayVowel-lao' <20 0 20 0>;
-# Attention: top-right curved consonantes are kerned to oVowel, hence we need bigger values here.
-#
-# 2 -- Ascending vowels + ascending consonants + wide top marks (replaced by .narrow by here)
-# foFon-lao not needed, enough space. foFai-lao anyway neither.
-#
-# 2a) -\"- + poPa / yoYa + maiTi-lao.narrow
-pos oVowel-lao poPa-lao' maiTi-lao.narrow <30 0 30 0>;
-pos oVowel-lao yoYa-lao' maiTi-lao.narrow <40 0 40 0>;
-pos ayMaiMuanVowel-lao poPa-lao' maiTi-lao.narrow <70 0 70 0>;
-pos ayMaiMuanVowel-lao yoYa-lao' maiTi-lao.narrow <80 0 80 0>;
-pos aiMaiMayVowel-lao poPa-lao' maiTi-lao.narrow <40 0 40 0>;
-pos aiMaiMayVowel-lao yoYa-lao' maiTi-lao.narrow <50 0 50 0>;
-#
-} LaoContexualKerning;
-";
-name = kern;
 }
 );
 fontMaster = (
