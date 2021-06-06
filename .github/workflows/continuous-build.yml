@@ -34,7 +34,7 @@ jobs:
         pip install -r requirements.txt
     - name: Build ${{ matrix.font-source }}
       run: |
-        sh build sources/${{matrix.font-source}} -o variable
+        bash build sources/${{matrix.font-source}} -o variable
     - name: Store fonts
       uses: actions/upload-artifact@v1
       with:
