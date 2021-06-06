@@ -15,8 +15,10 @@ jobs:
       matrix:
         font-source:
           - NotoLoopedLao.glyphs
-          - NotoSansLao.glyphs
-          - NotoSerifLao.glyphs
+          - NotoSansLao-MM.glyphs
+          - NotoSerifLao-MM.glyphs
+          - NotoLoopedLaoUI.glyphs
+          - NotoSansLaoUI-MM.glyphs
     steps:
     - name: Cancel previous
       uses: styfle/cancel-workflow-action@0.8.0
@@ -34,7 +36,7 @@ jobs:
         pip install -r requirements.txt
     - name: Build ${{ matrix.font-source }}
       run: |
-        bash build sources/${{matrix.font-source}} -o variable
+        fontmake -g sources/${{ matrix.font-source}} -o variable
     - name: Store fonts
       uses: actions/upload-artifact@v1
       with:
@@ -50,6 +52,8 @@ jobs:
           - NotoLoopedLao
           - NotoSansLao
           - NotoSerifLao
+          - NotoLoopedLaoUI
+          - NotoSansLaoUI
     steps:
     - name: Pull main repository
       uses: actions/checkout@v2
@@ -87,9 +91,11 @@ jobs:
     strategy:
       matrix:
         font-family:
-          - NotoLoopedLao
           - NotoSansLao
           - NotoSerifLao
+          - NotoSansLaoUI
+          # - NotoLoopedLao
+          # - NotoLoopedLaoUI
         weight: [100, 400, 900]
         width: [70, 100]
     steps:
