@@ -15,8 +15,10 @@ jobs:
       matrix:
         font-source:
           - NotoLoopedLao.glyphs
-          - NotoSansLao.glyphs
-          - NotoSerifLao.glyphs
+          - NotoSansLao-MM.glyphs
+          - NotoSerifLao-MM.glyphs
+          - NotoLoopedLaoUI.glyphs
+          - NotoSansLaoUI-MM.glyphs
     steps:
     - name: Cancel previous
       uses: styfle/cancel-workflow-action@0.8.0
@@ -50,6 +52,8 @@ jobs:
           - NotoLoopedLao
           - NotoSansLao
           - NotoSerifLao
+          - NotoLoopedLaoUI
+          - NotoSansLaoUI
     steps:
     - name: Pull main repository
       uses: actions/checkout@v2
@@ -90,6 +94,8 @@ jobs:
           - NotoLoopedLao
           - NotoSansLao
           - NotoSerifLao
+          - NotoLoopedLaoUI
+          - NotoSansLaoUI
         weight: [100, 400, 900]
         width: [70, 100]
     steps:
