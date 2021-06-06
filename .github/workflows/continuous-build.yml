@@ -91,11 +91,11 @@ jobs:
     strategy:
       matrix:
         font-family:
-          - NotoLoopedLao
           - NotoSansLao
           - NotoSerifLao
-          - NotoLoopedLaoUI
           - NotoSansLaoUI
+          # - NotoLoopedLao
+          # - NotoLoopedLaoUI
         weight: [100, 400, 900]
         width: [70, 100]
     steps:
