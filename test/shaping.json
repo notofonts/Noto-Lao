@@ -1,0 +1,16 @@
+{
+	"tests": [
+		{
+			"note": "Check that mark position is working correctly (see googlefonts/noto-source#379)",
+			"only": "NotoLoopedLao-VF.ttf",
+			"input": "ວິດ",
+			"expectation": "uni0EA7=0+617|uni0EB4=0@-596,0+0|uni0E94=2+684"
+		},
+		{
+			"note": "Check that manual and automatic belowmarks position well (see googlefonts/noto-source#377)",
+			"only": "NotoLoopedLao-VF.ttf",
+			"input": "ກຼຸ່",
+			"expectation": "uni0E81=0+721|uni0EBC=0@-578,0+0|uni0EB8.small=0@-433,-42+0|uni0EC8=0@-430,0+0"
+		}
+	]
+}
