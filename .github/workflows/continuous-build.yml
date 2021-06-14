@@ -83,7 +83,7 @@ jobs:
       uses: f-actions/font-bakery@v1
       with:
         subcmd: "check-profile"
-        args: "--config fontbakery.yml --ghmarkdown reports/fontbakery/${{ matrix.font-family }}-shaping.html fontbakery.profiles.shaping"
+        args: "--config fontbakery.yml --html reports/fontbakery/${{ matrix.font-family }}-shaping.html fontbakery.profiles.shaping"
         path: "builds/variable_ttf/${{ matrix.font-family }}-VF.ttf"
     - name: Store Fontbakery reports
       uses: actions/upload-artifact@v1
